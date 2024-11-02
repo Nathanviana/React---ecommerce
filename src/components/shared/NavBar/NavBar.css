@@ -1,0 +1,23 @@
+.navbar {
+    background-color: #333;
+    padding: 15px 0;
+    font-size: 20px;
+}
+.brand, .list_item {
+    color: white !important;
+}
+.list_item:hover {
+    color: #007bff !important;
+} 
+.btn{
+    background-color: #007bff !important;
+    color: white;
+    border: none;
+}
+button.navbar-toggler.collapsed {
+    background-color: #007bff !important;
+    border: none;
+}
+button.navbar-toggler {
+    background-color: #007bff !important;
+}
