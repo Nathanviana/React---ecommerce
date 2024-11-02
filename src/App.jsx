@@ -6,6 +6,7 @@ import Cadastro from "./components/cliente/cadastro";
 import Login from "./components/cliente/login";
 import ProductList from "./components/produtos/ProductList";
 
+
 function App() {
   return (
     <Router>
