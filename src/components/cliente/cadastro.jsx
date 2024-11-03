@@ -1,5 +1,6 @@
 // import React from 'react'
-import './cadastro.css'
+import './login-cadastro.css'
+import { Link } from 'react-router-dom'
 
 const Cadastro = () => {
     return (
@@ -12,7 +13,7 @@ const Cadastro = () => {
                     <input type="password" placeholder='Senha' />
                </div>
                 <button>continue</button>
-                <p className="loginsignup-login">já tem uma conta? <span>entrar aqui</span></p>
+                <p className="loginsignup-login">já tem uma conta? <Link to="/login" className="signup-link">Entrar aqui</Link></p>
             </div>
         </div>
     )
