@@ -14,10 +14,7 @@
     color: white;
     border: none;
 }
-button.navbar-toggler.collapsed {
-    background-color: #007bff !important;
-    border: none;
-}
-button.navbar-toggler {
-    background-color: #007bff !important;
+.btn:hover {
+    background-color: #0056b3 !important;
+    color: rgba(255, 255, 255, 0.701);
 }
