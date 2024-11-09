@@ -10,7 +10,7 @@ const Footer = () => {
 
                 <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h5 className="text-uppercase mb-4 font-weight-bold">E-commerce</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien egestas.</p>
+                    <p>Um e-commerce, ou comércio eletrônico, é um modelo de negócios que permite a compra e venda de produtos ou serviços pela internet. A loja virtual geralmente inclui funcionalidades como catálogos de produtos, carrinho de compras, formas de pagamento e métodos de envio. Esse tipo de comércio tem crescido devido à conveniência e à facilidade de acesso, permitindo que empresas alcancem uma audiência global e consumidores encontrem uma ampla variedade de opções em um só lugar.</p>
                 </div>
 
                 <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
@@ -32,11 +32,11 @@ const Footer = () => {
                 <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h5 className="text-uppercase mb-4 font-weight-bold">Contact</h5>
                     <p>
-                        <i className="bi bi-house mr-3"></i> Belém, PA 2299, BR</p>
+                        <i className="bi bi-house mr-3"></i> Av. Alcindo Cacela, 287 - Umarizal, Belém - PA, 66060-902</p>
                     <p>
                         <i className="bi bi-envelope mr-3"></i> mrobot@gmail.com</p>
                     <p>
-                        <i className="bi bi-phone mr-3"></i> + 55 234 567 88</p>
+                        <i className="bi bi-phone mr-3"></i> + 55 919 567 88</p>
                 </div>
 
             </div>
@@ -56,25 +56,28 @@ const Footer = () => {
                     <div className="text-center text-md-right">
                         <ul className="list-unstyled list-inline">
                             <li className="list-inline-item">
-                                <a className="btn-floating btn-sm text-white" href="#!">
+                                <a className="btn-floating btn-sm text-white" href="https://facebook.com">
                                     <i className="bi bi-facebook"></i>
                                 </a>
                             </li>
                             <li className="list-inline-item">
-                                <a className="btn-floating btn-sm text-white" href="#!">
+                                <a className="btn-floating btn-sm text-white" href="https://github.com/Nathanviana/React-ecommerce">
                                     <i className="bi bi-github"></i>
                                 </a>
                             </li>
                             <li className="list-inline-item">
-                                <a className="btn-floating btn-sm text-white" href="#!">
+                                <a className="btn-floating btn-sm text-white" href="https://google.com">
                                     <i className="bi bi-google"></i>
                                 </a>
                             </li>
                             <li className="list-inline-item">
-                                <a className="btn-floating btn-sm text-white" href="#!">
+                                <a className="btn-floating btn-sm text-white" href="https://www.linkedin.com/in/douglas-baker-neto-592a2430a/">
                                     <i className="bi bi-linkedin"></i>
                                 </a>
                             </li>
+                            <div className="mt-6">
+					            <img className="mx-auto md:mx-0" src="https://i.ibb.co/Qfvn4z6/payment.png"     alt="payment providers" />
+				        </div>
                         </ul>
                     </div>
 
