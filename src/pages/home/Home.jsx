@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import Carousel from 'react-bootstrap/Carousel';
-import ExampleCarouselImage from '../../components/shared/ExampleCarouselImage';
-import './Home.css';
+import { useState } from "react";
+import Carousel from "react-bootstrap/Carousel";
+import ExampleCarouselImage from "../../components/shared/ExampleCarouselImage";
+import "./Home.css";
 
 const Home = () => {
   const [index, setIndex] = useState(0);
@@ -13,12 +13,18 @@ const Home = () => {
   return (
     <div className="home-container">
       {/* Carrossel de Imagens */}
-      <Carousel activeIndex={index} onSelect={handleSelect} className="home-carousel">
+      <Carousel
+        activeIndex={index}
+        onSelect={handleSelect}
+        className="home-carousel"
+      >
         <Carousel.Item>
           <ExampleCarouselImage text="First slide" />
           <Carousel.Caption>
             <h3>Bem-vindo à Nossa Loja</h3>
-            <p>Encontre os melhores produtos e serviços com preços acessíveis.</p>
+            <p>
+              Encontre os melhores produtos e serviços com preços acessíveis.
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -60,6 +66,6 @@ const Home = () => {
       </section>
     </div>
   );
-}
+};
 
-export default Home
+export default Home;

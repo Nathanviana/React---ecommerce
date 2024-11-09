@@ -1,0 +1,24 @@
+.cadastro-produto-bg {
+    position: relative;
+    background-image: url('https://images.wallpaperscraft.com/image/single/paint_liquid_fluid_art_174808_3840x2160.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .cadastro-produto-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajuste a cor e opacidade conforme desejar */
+    z-index: 0;
+  }
+  
