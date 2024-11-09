@@ -22,7 +22,7 @@ const NavBar = () => {
     <Navbar expand="lg" className="navBar">
       <Container>
         <Navbar.Brand as={Link} to="/" className="brand">
-          React-Bootstrap
+          E-Commerce
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
