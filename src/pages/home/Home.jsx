@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import Carousel from 'react-bootstrap/Carousel';
-import ExampleCarouselImage from '../../components/shared/ExampleCarouselImage';
-import './Home.css';
+import { useState } from "react";
+import Carousel from "react-bootstrap/Carousel";
+import ExampleCarouselImage from "../../components/shared/ExampleCarouselImage";
+import "./Home.css";
 
 
 const Home = () => {
@@ -10,6 +10,7 @@ const Home = () => {
     const handleSelect = (selectedIndex) => {
         setIndex(selectedIndex);
     };
+
 
     return (
         <div className="home-container">
@@ -63,5 +64,8 @@ const Home = () => {
         </div>
     );
 }
+    </div>
+  );
+};
 
-export default Home
+export default Home;
