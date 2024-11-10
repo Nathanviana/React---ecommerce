@@ -1,6 +1,6 @@
-import "./cadastroProduto.css";
+import "./styles.css";
 
-const CadastroProduto = () => {
+function CadastroProduto() {
   return (
     <div className="cadastro-produto-bg">
         <div className="d-flex justify-content-center align-items-center vh-100">
@@ -11,7 +11,7 @@ const CadastroProduto = () => {
                         <input type="text" className="w-full min-w-56 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg p-2 focus:outline-none focus:ring focus:ring-gray-300 pl-10" placeholder="Nome do Produto" />
                     </div>
                     <div className="w-full flex items-center relative mx-0 md:mx-3">
-                        <textarea className="form-control w-full min-w-56 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg p-2 focus:outline-none focus:ring focus:ring-gray-300 pl-10" placeholder="Descrição do Produto"></textarea>
+                        <textarea className="form-control w-full min-w-56 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg p-2 focus:outline-none focus:ring focus:ring-gray-300 pl-10" placeholder="Descrição do Produto" />
                     </div>
                     <div className="w-full flex items-center relative mx-0 md:mx-3">
                         <input type="number" className="w-full min-w-56 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg p-2 focus:outline-none focus:ring focus:ring-gray-300 pl-10" placeholder="Preço" />

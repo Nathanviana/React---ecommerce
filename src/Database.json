@@ -1,0 +1,42 @@
+{
+  "clientes": [
+    {
+      "id": "b5d0",
+      "name": "Teste",
+      "email": "teste@gmail.com",
+      "senha": "123456789"
+    },
+    {
+      "id": "9b3b",
+      "name": "Samuel Rosário",
+      "email": "samuelrosario@gmail.com",
+      "senha": "123"
+    }
+  ],
+  "produtos": [
+    {
+      "id": "1",
+      "name": "Espaquete",
+      "quantity": "1",
+      "price": "20",
+      "img": "./src/assets/products/arrozcomfrango.png"
+    },
+    {
+      "id": "2",
+      "name": "Pizza",
+      "quantity": "1",
+      "price": "45",
+      "img": "./src/assets/products/pizza.png"
+    }
+  ],
+  "pedidos": [
+    {
+      "id": "1",
+      "nameClient": "Samuel",
+      "nameProduct": "Espaquete",
+      "quantity": "2",
+      "totalPrice": "40",
+      "status": "a pagar"
+    }
+  ]
+}

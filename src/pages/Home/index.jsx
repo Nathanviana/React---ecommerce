@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import ExampleCarouselImage from "../../components/shared/ExampleCarouselImage";
-import "./Home.css";
+import "./styles.css";
 
 
 const Home = () => {
@@ -64,8 +64,5 @@ const Home = () => {
         </div>
     );
 }
-    </div>
-  );
-};
 
 export default Home;
