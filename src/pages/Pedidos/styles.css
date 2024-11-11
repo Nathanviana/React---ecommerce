@@ -1,0 +1,88 @@
+/* Centraliza o contêiner da tabela */
+.pedidos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Define o estilo da tabela */
+  .pedidos-table {
+    width: 100%; /* Ajuste a largura conforme necessário */
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Cabeçalho da tabela */
+  .pedidos-table th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  /* Linhas da tabela */
+  .pedidos-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  /* Alternância de cor nas linhas */
+  .pedidos-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Efeito de hover nas linhas */
+  .pedidos-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+
+  .pedidos-table th,
+  .pedidos-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilo para botões */
+  .btn-delete {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .btn-proceed {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-delete:hover {
+    background-color: #c0392b;
+  }
+  
+  .btn-proceed:hover {
+    background-color: #45a049;
+  }
+  
+  .btn-proceed[disabled] {
+    background-color: #0bbac6;
+    cursor: not-allowed;
+  }
+  

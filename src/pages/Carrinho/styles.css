@@ -1,0 +1,140 @@
+.pedidos-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .pedidos-lado-esquerdo {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .pedidos-lado-esquerdo h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .itens-selecionados {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .produto-selecionado {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .imagem-produto {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .info-produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .botoes-quantidade {
+    display: flex;
+    gap: 10px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .carrinho-container {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .carrinho-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .carrinho-tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .carrinho-tabela th,
+  .carrinho-tabela td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .carrinho-tabela th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .confirmacao-compra {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .confirmacao-compra h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .confirmacao-compra p {
+    margin: 5px 0;
+  }
+  
+  .btn-confirmar {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .btn-confirmar:hover {
+    background-color: #218838;
+  }
+  
+  @media (max-width: 768px) {
+    .pedidos-container {
+      flex-direction: column;
+    }
+  
+    .pedidos-lado-esquerdo, .carrinho-container {
+      flex: 1;
+      margin-bottom: 20px;
+    }
+  }
+  

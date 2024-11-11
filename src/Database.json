@@ -1,42 +1,79 @@
 {
   "clientes": [
     {
-      "id": "b5d0",
-      "name": "Teste",
-      "email": "teste@gmail.com",
+      "id": "7a2d",
+      "name": "Samuel do Rosário",
+      "email": "samuel@gmail.com",
       "senha": "123456789"
-    },
-    {
-      "id": "9b3b",
-      "name": "Samuel Rosário",
-      "email": "samuelrosario@gmail.com",
-      "senha": "123"
     }
   ],
   "produtos": [
     {
-      "id": "1",
-      "name": "Espaquete",
+      "id": "9cd6",
+      "name": "Moschino Toy Boy 30ml",
       "quantity": "1",
-      "price": "20",
-      "img": "./src/assets/products/arrozcomfrango.png"
+      "price": "369",
+      "img": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQFlb_uQUK99N2b4mNEx5xmwTZnT3f_Z61xVfYz9t3tRgp6PIg11Xm5s0PFHDVHwl2Jyfr46psu1akPtSTF57Ckop49QEtGVKQjFeaNZg1SYvOMLzeYWozB&usqp=CAE"
     },
     {
-      "id": "2",
-      "name": "Pizza",
+      "id": "3e41",
+      "name": "Dior Hypnotic Poison Eau De Toilette",
       "quantity": "1",
-      "price": "45",
-      "img": "./src/assets/products/pizza.png"
+      "price": "659",
+      "img": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ88IAGQZXov5j6EpPJjOU4dSK67GS8rNh-8J8mLK0mLvcY5ugRTRtlxXbtiDoLO2rWFy7cV28_mpucwPyASGMGjH0mNiWopwxTErVTu-qoEwbwzI7IJmsJyrw&usqp=CAE"
+    },
+    {
+      "id": "acbd",
+      "name": "Good Girl Carolina Herrera",
+      "quantity": "1",
+      "price": "389.90",
+      "img": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS2a2LoZT7_OQUAl7lF6p9W1dbv_WIn76Zlv5nJaxoq3l6-uzMaRG2_bEyKb9V8z4XKU7jfANnKGSvcHNxpUsb31Pvf3EsFGykjozMBTK71Shve-5ZhrBEkdw&usqp=CAE"
+    },
+    {
+      "id": "8193",
+      "name": "Armaf Club De Nuit Intense 105ml",
+      "quantity": "1",
+      "price": "303",
+      "img": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTd2Sa9R1Cslq_LH0ajSP9ATi0hCRvEqiE5OA_7QRa1cz4V6mzt3grLTAz-BG4cyGnz6JGkvqBCr7x6V9Jdo9EJlJLDd41dRcEr-vn6IR0i0lC-jd8ZK_KyxA&usqp=CAE"
     }
   ],
   "pedidos": [
     {
-      "id": "1",
-      "nameClient": "Samuel",
-      "nameProduct": "Espaquete",
-      "quantity": "2",
-      "totalPrice": "40",
-      "status": "a pagar"
+      "id": "b9b6",
+      "clienteName": "Samuel do Rosário",
+      "paymentMethod": "credito",
+      "products": [
+        {
+          "id": "9cd6",
+          "name": "Moschino Toy Boy 30ml",
+          "quantity": 1,
+          "price": "369",
+          "img": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQFlb_uQUK99N2b4mNEx5xmwTZnT3f_Z61xVfYz9t3tRgp6PIg11Xm5s0PFHDVHwl2Jyfr46psu1akPtSTF57Ckop49QEtGVKQjFeaNZg1SYvOMLzeYWozB&usqp=CAE"
+        },
+        {
+          "id": "3e41",
+          "name": "Dior Hypnotic Poison Eau De Toilette",
+          "quantity": 1,
+          "price": "659",
+          "img": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ88IAGQZXov5j6EpPJjOU4dSK67GS8rNh-8J8mLK0mLvcY5ugRTRtlxXbtiDoLO2rWFy7cV28_mpucwPyASGMGjH0mNiWopwxTErVTu-qoEwbwzI7IJmsJyrw&usqp=CAE"
+        },
+        {
+          "id": "acbd",
+          "name": "Good Girl Carolina Herrera",
+          "quantity": 2,
+          "price": "389.90",
+          "img": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS2a2LoZT7_OQUAl7lF6p9W1dbv_WIn76Zlv5nJaxoq3l6-uzMaRG2_bEyKb9V8z4XKU7jfANnKGSvcHNxpUsb31Pvf3EsFGykjozMBTK71Shve-5ZhrBEkdw&usqp=CAE"
+        },
+        {
+          "id": "8193",
+          "name": "Armaf Club De Nuit Intense 105ml",
+          "quantity": 1,
+          "price": "303",
+          "img": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTd2Sa9R1Cslq_LH0ajSP9ATi0hCRvEqiE5OA_7QRa1cz4V6mzt3grLTAz-BG4cyGnz6JGkvqBCr7x6V9Jdo9EJlJLDd41dRcEr-vn6IR0i0lC-jd8ZK_KyxA&usqp=CAE"
+        }
+      ],
+      "total": 2110.8,
+      "status": "Enviando"
     }
   ]
 }

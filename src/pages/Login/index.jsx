@@ -20,6 +20,9 @@ const Login = () => {
 				const userData = response.data[0];
 				localStorage.setItem("user", JSON.stringify(userData));
 				navigate("/");
+
+				email("")
+				senha("")
 			} else {
 				alert("Credenciais inválidas");
 			}
@@ -47,7 +50,8 @@ const Login = () => {
 								onChange={(e) => setEmail(e.target.value)}
 								className="w-full min-w-56 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg p-2 focus:outline-none focus:ring focus:ring-gray-300 pl-10"
 								placeholder="Email"
-							/>
+								required
+								/>
 						</div>
 						<div className="w-full flex items-center relative mx-0 md:mx-3">
 							<input
@@ -56,7 +60,8 @@ const Login = () => {
 								onChange={(e) => setSenha(e.target.value)}
 								className="w-full min-w-56 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg p-2 focus:outline-none focus:ring focus:ring-gray-300 pl-10"
 								placeholder="Senha"
-							/>
+								required
+								/>
 						</div>
 						<button
 							type="submit"

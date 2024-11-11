@@ -1,8 +1,8 @@
 // import React from 'react'
 import { useState } from "react";
 import "./styles.css";
-import { Link } from "react-router-dom";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function Cadastro() {
 	const [clientName, setClientName] = useState("");
@@ -19,14 +19,16 @@ function Cadastro() {
 			).length;
 
 			if (!client_Exists) {
-				console.log("criado");
-
 				const newClients = {
 					name: clientName,
 					email: clientEmail,
 					senha: clientSenha,
 				};
 				await axios.post("http://localhost:3000/clientes", newClients);
+
+				clientEmail("");
+				clientName("");
+				clientSenha("");
 			}
 		} catch (error) {
 			console.log(error);
@@ -53,6 +55,7 @@ function Cadastro() {
 								onChange={(e) => setClientName(e.target.value)}
 								className="w-full min-w-56 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg p-2 focus:outline-none focus:ring focus:ring-gray-300 pl-10"
 								placeholder="Nome Completo"
+								required
 							/>
 						</div>
 						<div className="w-full flex items-center relative mx-0 md:mx-3">
@@ -62,15 +65,17 @@ function Cadastro() {
 								onChange={(e) => setClientEmail(e.target.value)}
 								className="w-full min-w-56 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg p-2 focus:outline-none focus:ring focus:ring-gray-300 pl-10"
 								placeholder="Email"
+								required
 							/>
 						</div>
 						<div className="w-full flex items-center relative mx-0 md:mx-3">
 							<input
 								type="password"
-                value={clientSenha}
-                onChange={(e) => setClientSenha(e.target.value)}
+								value={clientSenha}
+								onChange={(e) => setClientSenha(e.target.value)}
 								className="w-full min-w-56 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg p-2 focus:outline-none focus:ring focus:ring-gray-300 pl-10"
 								placeholder="Senha"
+								required
 							/>
 						</div>
 						<button
