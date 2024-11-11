@@ -1,8 +1,26 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Como rodar o projeto
 
-Currently, two official plugins are available:
+1. Clone o repositório para o seu ambiente local:
+   ```bash
+   git clone <https://github.com/Nathanviana/React-ecommerce.git>
+   ```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Navegue até a pasta do projeto:
+   ```bash
+   cd <react-ecommerce>
+   ```
+
+3. Abra dois terminais na pasta do projeto:
+
+   - No primeiro terminal, inicie a API:
+     ```bash
+     npm run api
+     ```
+
+   - No segundo terminal, inicie a página web:
+     ```bash
+     npm run dev
+     ```
+
+Agora, você pode acessar a aplicação no seu navegador.
