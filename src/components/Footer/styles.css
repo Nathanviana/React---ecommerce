@@ -18,3 +18,37 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+ul {
+    display: flex;
+}
+
+.bi {
+    color: white; /* Define a cor branca para todos os ícones */
+   
+  }
+  
+  /* Para ajustar o tamanho dos ícones */
+  .bi-facebook {
+    font-size: 24px; 
+  }
+  .bi-github {
+    font-size: 24px; 
+  }
+  .bi-google {
+    font-size: 24px; 
+  }
+  .bi-linkedin {
+    font-size: 24px; 
+  }
+  
+.list-inline-item .bi {
+    margin-right: 10px; /* Espaço entre os ícones */
+}
+.list-inline {
+    display: flex;
+    justify-content: space-around;
+}
+.list-inline-item {
+    margin: 0 10px;
+}
+  
