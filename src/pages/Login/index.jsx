@@ -6,6 +6,8 @@ import axios from "axios";
 const Login = () => {
 	const [email, setEmail] = useState("");
 	const [senha, setSenha] = useState("");
+	const [message, setMessage] = useState(null);
+	const [messageType, setMessageType] = useState("");
 	const navigate = useNavigate();
 
 	async function handleLogin(e) {
@@ -19,16 +21,21 @@ const Login = () => {
 			if (response.data.length > 0) {
 				const userData = response.data[0];
 				localStorage.setItem("user", JSON.stringify(userData));
-				navigate("/");
 
-				email("")
-				senha("")
+				setMessage("Login efetuado com sucesso");
+				setMessageType("success");
+				setTimeout(() => navigate("/"), 2000);
+
+				setEmail("")
+				setSenha("")
 			} else {
-				alert("Credenciais inválidas");
+				setMessage("Email ou senha inválidos");
+				setMessageType("error");
 			}
 		} catch (error) {
 			console.error("Erro ao fazer login:", error);
-			alert("Ocorreu um erro ao fazer login");
+			setMessage("Erro ao fazer login");
+			setMessageType("error");
 		}
 	}
 	return (
@@ -39,6 +46,17 @@ const Login = () => {
 					style={{ width: "400px", borderRadius: "10px" }}
 				>
 					<h3 className="text-2xl font-bold text-center mb-6">Login</h3>
+					{message && (
+						<div
+							className={`${
+								messageType === "success"
+									? "bg-green-100 border-green-400 text-green-700"
+									: "bg-red-100 border-red-400 text-red-700"
+							} border p-3 rounded-md mb-3`}
+						>
+							{message}
+						</div>
+					)}
 					<form
 						onSubmit={handleLogin}
 						className="flex items-center flex-col space-y-2"

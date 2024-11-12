@@ -2,12 +2,15 @@
 import { useState } from "react";
 import "./styles.css";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Cadastro() {
 	const [clientName, setClientName] = useState("");
 	const [clientEmail, setClientEmail] = useState("");
 	const [clientSenha, setClientSenha] = useState("");
+	const [message, setMessage] = useState(null);
+	const [messageType, setMessageType] = useState("");
+	const navigate = useNavigate();
 
 	async function createAccount(e) {
 		e.preventDefault();
@@ -26,12 +29,22 @@ function Cadastro() {
 				};
 				await axios.post("http://localhost:3000/clientes", newClients);
 
-				clientEmail("");
-				clientName("");
-				clientSenha("");
+				setMessage("Conta criada com sucesso");
+				setMessageType("success");
+				setTimeout(() => navigate("/login"), 2000);
+
+				setClientEmail("");
+				setClientName("");
+				setClientSenha("");
+
+			} else {
+				setMessage("Email já cadastrado");
+				setMessageType("error");
 			}
 		} catch (error) {
 			console.log(error);
+			setMessage("Erro ao criar conta");
+			setMessageType("error");
 		}
 	}
 
@@ -43,6 +56,15 @@ function Cadastro() {
 					style={{ width: "400px", borderRadius: "10px" }}
 				>
 					<h3 className="text-2xl font-bold text-center mb-6">Registrar-se</h3>
+					{message && (
+						<div
+							className={`${
+								messageType === "success" ? "bg-green-100" : "bg-red-100 border-red-400 text-red-700"
+							} p-2 text-center text-sm text-gray-600 rounded-md mb-2`}
+						>
+							{message}
+						</div>
+					)}
 					<form
 						onSubmit={createAccount}
 						method="post"
