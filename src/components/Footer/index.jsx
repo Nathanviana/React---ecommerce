@@ -1,4 +1,5 @@
 import "./styles.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const Footer = () => {
 	return (
@@ -8,14 +9,8 @@ const Footer = () => {
 					<div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
 						<h5 className="text-uppercase mb-4 font-weight-bold">E-commerce</h5>
 						<p>
-							Um e-commerce, ou comércio eletrônico, é um modelo de negócios que
-							permite a compra e venda de produtos ou serviços pela internet. A
-							loja virtual geralmente inclui funcionalidades como catálogos de
-							produtos, carrinho de compras, formas de pagamento e métodos de
-							envio. Esse tipo de comércio tem crescido devido à conveniência e
-							à facilidade de acesso, permitindo que empresas alcancem uma
-							audiência global e consumidores encontrem uma ampla variedade de
-							opções em um só lugar.
+							É um modelo de negócios que
+							permite a compra e venda de produtos ou serviços pela internet.
 						</p>
 					</div>
 
@@ -60,16 +55,15 @@ const Footer = () => {
 
 				<hr className="mb-4" />
 
-				<div className="row align-items-center">
-					<div className="col-md-7 col-lg-8">
-						<p>
-							Copyright ©2024 All right reserved by:
-							<a href="https://mdbootstrap.com/">
-								<strong>The Providers</strong>
-							</a>
-						</p>
-					</div>
-
+			<div className="row align-items-center">
+						<div className="col-md-7 col-lg-8">
+							<p>
+								Copyright ©2024 All right reserved by:
+								<a href="https://mdbootstrap.com/">
+									<strong class="text-warning">The Providers</strong>
+								</a>
+							</p>
+						</div>
 					<div className="col-md-5 col-lg-4">
 						<div className="text-center text-md-right">
 							<ul className="list-unstyled list-inline">
@@ -105,6 +99,7 @@ const Footer = () => {
 										<i className="bi bi-linkedin" />
 									</a>
 								</li>
+							</ul>
 								<div className="mt-6">
 									<img
 										className="mx-auto md:mx-0"
@@ -112,7 +107,6 @@ const Footer = () => {
 										alt="payment providers"
 									/>
 								</div>
-							</ul>
 						</div>
 					</div>
 				</div>
