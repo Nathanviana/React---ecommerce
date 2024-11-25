@@ -1,6 +1,9 @@
 .navBar {
     background-color: #333;
-    padding: 10px 0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
   .container {
@@ -9,6 +12,7 @@
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 5px;
   }
   
   .brand a {
@@ -19,6 +23,14 @@
   
   .nav {
     display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+  }
+
+  .nav .nav-item-first-child {
+    margin-left: auto;
   }
   
   .nav-item {
@@ -33,22 +45,72 @@
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   
   .nav-link:hover {
     background-color: #555;
     color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   
   .login-btn {
-    background-color: #007bff;
-    padding: 10px 20px;
-    font-weight: bold;
+    padding: 5px 10px;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
   }
-  
-  .login-btn:hover {
-    background-color: #0056b3;
+
+  .texto-login {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .carrinho-container2 {
+    padding: 5px 10px;
     color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    transition: background-color 0.3s;
   }
-  
+
+  .texto-carrinho {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 12px; 
+  }
+
+  .bi-cart4 {
+    font-size: 30px;
+  }
+
+  .bi-person-circle {
+    font-size: 30px;
+  }
+
+  .local-btn {
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    transition: background-color 0.3s;
+  }
+
+  .texto-local {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .bi-geo-alt {
+    font-size: 30px;
+  }
